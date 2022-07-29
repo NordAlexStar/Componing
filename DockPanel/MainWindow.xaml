@@ -9,10 +9,10 @@
     <DockPanel LastChildFill="True">
         <Button DockPanel.Dock="Top" Background="AliceBlue" Content="Верхняя кнопка 1" />
         <Button DockPanel.Dock="Top" Background="AliceBlue" Content="Верхняя кнопка 2" />
-        <Button DockPanel.Dock="Bottom" Background="BlanchedAlmond" Content="Нижняя кнопка" />
-        <Button DockPanel.Dock="Left" Background="Aquamarine" Content="Левая кнопка1" />
-        <Button DockPanel.Dock="Left" Background="Aquamarine" Content="Левая кнопка2" />
-        <Button DockPanel.Dock="Right" Background="DarkGreen" Content="Правая кнопка" />
+        <Button DockPanel.Dock="Bottom" Background="BlanchedAlmond" Content="Change container to Grid" Click="Button_Click" Tag="{x:Type Grid}" />
+        <Button DockPanel.Dock="Left" Background="Aquamarine" Content="Change container to WrapPanel" Click="Button_Click" Tag="{x:Type WrapPanel}"/>
+        <Button DockPanel.Dock="Left" Background="Aquamarine" Content="Change container to StackPanel" Click="Button_Click" Tag="{x:Type StackPanel}"/>
+        <Button DockPanel.Dock="Right" Background="DarkGreen" Content="Change container to DockPanel" Click="Button_Click" Tag="{x:Type DockPanel}"/>
         <Button Background="LightGreen" Content="Центр" />
     </DockPanel>
 </Window>
