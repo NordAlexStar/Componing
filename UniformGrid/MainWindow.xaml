@@ -6,12 +6,12 @@
         xmlns:local="clr-namespace:UniformGrid"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <UniformGrid Rows="5" Columns="3">
+    <UniformGrid Rows="5" Columns="2">
         
         <Border BorderBrush="AliceBlue" BorderThickness="5" CornerRadius="4" Background="Beige" >
             <TextBlock Text="1" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
         </Border>
-
+        <StackPanel></StackPanel>
         <Border BorderBrush="#FF1F8BEA" BorderThickness="5" CornerRadius="4" Background="#FFD0D02B" >
             <TextBlock Text="2" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
         </Border>

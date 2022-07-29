@@ -6,13 +6,26 @@
         xmlns:local="clr-namespace:Stackpanel"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+    
     <StackPanel>
-        <Border BorderBrush="AliceBlue" BorderThickness="5" CornerRadius="4" Background="Beige" >
-            <TextBlock Text="1" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
-        </Border>
-
+        <StackPanel Orientation="Horizontal" Margin="2">
+            <TextBlock Text="Ievadiet datus par augumu" MinWidth="150"></TextBlock>
+            <TextBox MinWidth="200" Margin="5,0,0,0"></TextBox>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="2">
+            <TextBlock Text="Ievadiet datus par vecumu" MinWidth="150"></TextBlock>
+            <TextBox MinWidth="200" Margin="5,0,0,0"></TextBox>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="2">
+            <TextBlock Text="Ievadiet datus par dzimumu" MinWidth="150"></TextBlock>
+            <TextBox MinWidth="200" Margin="5,0,0,0"></TextBox>
+        </StackPanel>
         <Border BorderBrush="#FF1F8BEA" BorderThickness="5" CornerRadius="4" Background="#FFD0D02B" >
             <TextBlock Text="2" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+        </Border>
+        
+        <Border BorderBrush="AliceBlue" BorderThickness="5" CornerRadius="4" Background="Beige" >
+            <TextBlock Text="1" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
         </Border>
 
         <Border BorderBrush="#FF9E34DE" BorderThickness="5" CornerRadius="4" Background="#FF2BCCD0"   >
@@ -24,6 +37,7 @@
         </Border>
 
         <StackPanel Orientation="Horizontal">
+            
             <Border BorderBrush="AliceBlue" BorderThickness="5" CornerRadius="4" Background="Beige" >
                 <TextBlock Text="1" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
             </Border>
@@ -39,6 +53,8 @@
             <Border BorderBrush="#FF9E34DE" BorderThickness="5" CornerRadius="4"    >
                 <TextBlock Text="4" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
             </Border>
+            
         </StackPanel>
+        
     </StackPanel>
 </Window>

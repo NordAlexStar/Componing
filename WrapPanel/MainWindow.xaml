@@ -5,13 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WrapPanel"
         mc:Ignorable="d"
-        Title="MainWindow" Height="160" Width="180">
-    <WrapPanel>
+        Title="MainWindow" Height="156" Width="157">
+    <WrapPanel Margin="0,0,15,9" Orientation="Vertical">
         <Button Background="AliceBlue" Content="Кнопка 1" />
         <Button Background="Blue" Content="Кнопка 2" />
         <Button Background="Aquamarine" Content="Кнопка 3" Height="30"/>
         <Button Background="DarkGreen" Content="Кнопка 4" Height="20"/>
         <Button Background="LightGreen" Content="Кнопка 5"/>
+        <WrapPanel>
+            <Button Background="Aquamarine" Content="Кнопка 3" Height="30"/>
+            <Button Background="DarkGreen" Content="Кнопка 4" Height="20"/>
+            <Button Background="LightGreen" Content="Кнопка 5"/>
+        </WrapPanel>
         <Button Background="RosyBrown" Content="Кнопка 6" Width="80" />
         <Button Background="GhostWhite" Content="Кнопка 7" />
     </WrapPanel>

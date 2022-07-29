@@ -17,7 +17,7 @@
         <Button Content="Top" Width="60" Height="30" VerticalAlignment="Top" />
         <Button Content="Stretch" Width="60" VerticalAlignment="Stretch" Margin="150 10 0 10" />
 
-        <Button Content="15 10 0 0" Width="60" Height="30" Margin ="15 10 0 0"
+        <Button Content="15 10 0 0" Width="60" Height="30" Margin ="13,10,0,0"
                         HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <Button Content="0 0 20 10" Width="60" Height="30" Margin ="0 0 20 10"
                     HorizontalAlignment="Right" VerticalAlignment="Bottom"/>

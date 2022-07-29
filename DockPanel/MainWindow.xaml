@@ -7,8 +7,15 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <DockPanel LastChildFill="True">
-        <Button DockPanel.Dock="Top" Background="AliceBlue" Content="Верхняя кнопка 1" />
-        <Button DockPanel.Dock="Top" Background="AliceBlue" Content="Верхняя кнопка 2" />
+        <Menu DockPanel.Dock="Top" Background="AliceBlue">
+            <MenuItem Header="Save">
+                <MenuItem Header="Save To"></MenuItem>
+                <MenuItem Header="Save To"></MenuItem>
+                <MenuItem Header="Save To"></MenuItem>
+            </MenuItem>
+            <MenuItem Header="Open"></MenuItem>
+        </Menu>
+
         <Button DockPanel.Dock="Bottom" Background="BlanchedAlmond" Content="Change container to Grid" Click="Button_Click" Tag="{x:Type Grid}" />
         <Button DockPanel.Dock="Left" Background="Aquamarine" Content="Change container to WrapPanel" Click="Button_Click" Tag="{x:Type WrapPanel}"/>
         <Button DockPanel.Dock="Left" Background="Aquamarine" Content="Change container to StackPanel" Click="Button_Click" Tag="{x:Type StackPanel}"/>

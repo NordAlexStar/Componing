@@ -19,8 +19,12 @@ namespace DockPanel
         {
             Type? PanelType = ((FrameworkElement)sender).Tag as Type;
 
-            var childrn = (this.Content as Panel).Children;
-            Panel NewPanel = (Panel)Activator.CreateInstance(PanelType ?? typeof(Grid));
+
+            UIElementCollection childrn = (this.Content as Panel).Children;
+
+
+            Panel? NewPanel = Activator.CreateInstance(PanelType ?? typeof(Grid)) as Panel;
+
             foreach (var item in childrn.OfType<UIElement>().ToList())
             {
                 (this.Content as Panel).Children.Remove(item as UIElement);

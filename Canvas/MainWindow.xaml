@@ -7,8 +7,10 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Canvas Background="Lavender">
-        <Button Background="AliceBlue" Content="Top 20 Left 40" Canvas.Top="20" Canvas.Left="40" />
-        <Button Background="LightSkyBlue" Content="Top 20 Right 20" Canvas.Top="20" Canvas.Right="20"/>
+        <Button Background="AliceBlue" Name="TheButton" Content="Top 20 Left 40"  Height="1 cm"
+                Canvas.Top="20" Canvas.Left="40" />
+        <Button Background="LightSkyBlue" Content="Top 20 Right 20" 
+                Canvas.Top="20" Height="{Binding ElementName=TheButton, Path=Height}" Canvas.Right="20"/>
         <Button Background="Aquamarine" Content="Bottom 30 Left 20" Canvas.Bottom="30" Canvas.Left="20"/>
         <Button Background="LightCyan" Content="Bottom 20 Right 40" Canvas.Bottom="20" Canvas.Right="40"/>
     </Canvas>
