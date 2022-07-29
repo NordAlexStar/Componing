@@ -7,7 +7,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ComponingGrid", "Componing\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UniformGrid", "UniformGrid\UniformGrid.csproj", "{B9C4C1D6-47DB-4556-B1FE-17BCB60F9315}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stackpanel", "Stackpanel\Stackpanel.csproj", "{6689EFD3-201F-42C2-8736-3DC3651566EF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stackpanel", "Stackpanel\Stackpanel.csproj", "{6689EFD3-201F-42C2-8736-3DC3651566EF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DockPanel", "DockPanel\DockPanel.csproj", "{1C806A4D-4440-48CF-9C83-0DEA2E2FA89B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WrapPanel", "WrapPanel\WrapPanel.csproj", "{74611906-B7C9-4D3A-A620-23BE62823471}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Canvas", "Canvas\Canvas.csproj", "{28D082CC-D907-4105-8E67-7F8CAE90346A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicOrientationProperties", "BasicOrientationProperties\BasicOrientationProperties.csproj", "{3B5EC7FA-94FB-4EC8-8B2D-E44616F0EF4C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +35,22 @@ Global
 		{6689EFD3-201F-42C2-8736-3DC3651566EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6689EFD3-201F-42C2-8736-3DC3651566EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6689EFD3-201F-42C2-8736-3DC3651566EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C806A4D-4440-48CF-9C83-0DEA2E2FA89B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C806A4D-4440-48CF-9C83-0DEA2E2FA89B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C806A4D-4440-48CF-9C83-0DEA2E2FA89B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C806A4D-4440-48CF-9C83-0DEA2E2FA89B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74611906-B7C9-4D3A-A620-23BE62823471}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74611906-B7C9-4D3A-A620-23BE62823471}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74611906-B7C9-4D3A-A620-23BE62823471}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74611906-B7C9-4D3A-A620-23BE62823471}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28D082CC-D907-4105-8E67-7F8CAE90346A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28D082CC-D907-4105-8E67-7F8CAE90346A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28D082CC-D907-4105-8E67-7F8CAE90346A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28D082CC-D907-4105-8E67-7F8CAE90346A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B5EC7FA-94FB-4EC8-8B2D-E44616F0EF4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B5EC7FA-94FB-4EC8-8B2D-E44616F0EF4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B5EC7FA-94FB-4EC8-8B2D-E44616F0EF4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B5EC7FA-94FB-4EC8-8B2D-E44616F0EF4C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
