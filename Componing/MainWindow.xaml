@@ -24,7 +24,7 @@
         <GridSplitter Grid.Column="0" ShowsPreview="False" Width="3" Grid.RowSpan="6"
         HorizontalAlignment="Right" VerticalAlignment="Stretch" />
 
-        <GridSplitter Grid.Column="0" ShowsPreview="False" Height="3" Grid.Row="0" Grid.ColumnSpan="4"
+        <GridSplitter Grid.Column="0" ShowsPreview="False" Height="3" Grid.Row="3" Grid.ColumnSpan="3"
         HorizontalAlignment="Stretch" VerticalAlignment="Bottom" />
 
         <Border BorderBrush="AliceBlue" BorderThickness="5" CornerRadius="4" Background="Beige" Grid.Column="0" Grid.Row="0">
