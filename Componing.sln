@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComponingGrid", "Componing\ComponingGrid.csproj", "{40BF8F77-DAE7-46C8-883D-7C5D0520263D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ComponingGrid", "Componing\ComponingGrid.csproj", "{40BF8F77-DAE7-46C8-883D-7C5D0520263D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniformGrid", "UniformGrid\UniformGrid.csproj", "{B9C4C1D6-47DB-4556-B1FE-17BCB60F9315}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UniformGrid", "UniformGrid\UniformGrid.csproj", "{B9C4C1D6-47DB-4556-B1FE-17BCB60F9315}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stackpanel", "Stackpanel\Stackpanel.csproj", "{6689EFD3-201F-42C2-8736-3DC3651566EF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{B9C4C1D6-47DB-4556-B1FE-17BCB60F9315}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B9C4C1D6-47DB-4556-B1FE-17BCB60F9315}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B9C4C1D6-47DB-4556-B1FE-17BCB60F9315}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6689EFD3-201F-42C2-8736-3DC3651566EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6689EFD3-201F-42C2-8736-3DC3651566EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6689EFD3-201F-42C2-8736-3DC3651566EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6689EFD3-201F-42C2-8736-3DC3651566EF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
