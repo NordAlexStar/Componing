@@ -11,11 +11,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stackpanel", "Stackpanel\St
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DockPanel", "DockPanel\DockPanel.csproj", "{1C806A4D-4440-48CF-9C83-0DEA2E2FA89B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WrapPanel", "WrapPanel\WrapPanel.csproj", "{74611906-B7C9-4D3A-A620-23BE62823471}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WrapPanel", "WrapPanel\WrapPanel.csproj", "{74611906-B7C9-4D3A-A620-23BE62823471}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Canvas", "Canvas\Canvas.csproj", "{28D082CC-D907-4105-8E67-7F8CAE90346A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Canvas", "Canvas\Canvas.csproj", "{28D082CC-D907-4105-8E67-7F8CAE90346A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicOrientationProperties", "BasicOrientationProperties\BasicOrientationProperties.csproj", "{3B5EC7FA-94FB-4EC8-8B2D-E44616F0EF4C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BasicOrientationProperties", "BasicOrientationProperties\BasicOrientationProperties.csproj", "{3B5EC7FA-94FB-4EC8-8B2D-E44616F0EF4C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task", "Task\Task.csproj", "{F5DD7409-491B-4EE2-8793-D120D348A6EE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{3B5EC7FA-94FB-4EC8-8B2D-E44616F0EF4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3B5EC7FA-94FB-4EC8-8B2D-E44616F0EF4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3B5EC7FA-94FB-4EC8-8B2D-E44616F0EF4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5DD7409-491B-4EE2-8793-D120D348A6EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5DD7409-491B-4EE2-8793-D120D348A6EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5DD7409-491B-4EE2-8793-D120D348A6EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5DD7409-491B-4EE2-8793-D120D348A6EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
