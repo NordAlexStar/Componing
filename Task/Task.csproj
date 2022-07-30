@@ -7,4 +7,16 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="color-scale-arrow-red-to-green-measuring-device-icon-risk-level-indicator-vector-illustration-isometric-style-169560991.jpg" />
+    <None Remove="conserv.png" />
+    <None Remove="invoiceEUR.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="color-scale-arrow-red-to-green-measuring-device-icon-risk-level-indicator-vector-illustration-isometric-style-169560991.jpg" />
+    <Resource Include="conserv.png" />
+    <Resource Include="invoiceEUR.jpg" />
+  </ItemGroup>
+
 </Project>

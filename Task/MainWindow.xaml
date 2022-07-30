@@ -4,12 +4,13 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Task"
-        mc:Ignorable="d"
+        mc:Ignorable="d"    WindowStartupLocation="CenterScreen"  WindowStyle="SingleBorderWindow"
+        ResizeMode="CanResizeWithGrip"  
         Title="MainWindow" Height="450" Width="800">
     <DockPanel>
         <Menu DockPanel.Dock="Top">
-            <MenuItem Header="First">
-                <MenuItem Header="F.1"></MenuItem>
+            <MenuItem Header="Actions">
+                <MenuItem Header="Get text from textbox" Click="MenuItem_Click_1"></MenuItem>
                 <MenuItem Header="F.2"></MenuItem>
                 <MenuItem Header="F.3"></MenuItem>
             </MenuItem>
@@ -17,32 +18,51 @@
                 <MenuItem Header="S.1"></MenuItem>
                 <MenuItem Header="S.2"></MenuItem>
             </MenuItem>
-            <MenuItem Header="Third"></MenuItem>
+            <MenuItem Header="Exit" Click="MenuItem_Click"></MenuItem>
         </Menu>
 
         <StatusBar DockPanel.Dock="Bottom">
             <TextBlock Text="Status"></TextBlock>
         </StatusBar>
 
-        
-            <StackPanel MinWidth="50" DockPanel.Dock="Left">
-                <Button>1</Button>
-                <Button>2</Button>
-                <Button>3</Button>
-                <Button>4</Button>
-            </StackPanel>
 
-       
+        <StackPanel MinWidth="50" DockPanel.Dock="Left">
+            <Button Name="btnTarget" Content="{Binding ElementName=txtTextBox, Path=Text}"></Button>
+            <Button Content="{Binding Path=Text}"></Button>
+            <Button>
+                <Image Source="/invoiceEUR.jpg" Height="10" RenderTransformOrigin="0.5,0.5" Opacity="0.5">
+                    <Image.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform ScaleY="-1.5"/>
+                            <SkewTransform AngleX="-20"/>
+                            <RotateTransform Angle="11.31"/>
+                            <TranslateTransform X="4E-06"/>
+                        </TransformGroup>
+                    </Image.RenderTransform>
+                </Image>
+            </Button>
+            <Button>4</Button>
+        </StackPanel>
 
 
-        
-            <RichTextBox>
-                <FlowDocument>
-                    <Paragraph>
-                        <Run Text="Das ir fantastisch!!!"></Run>
-                    </Paragraph>
-                </FlowDocument>
-            </RichTextBox>
-        
+
+
+
+        <TextBox Name="txtTextBox" Text="Same text" TextChanged="txtTextBox_TextChanged"
+                     TextWrapping="Wrap" 
+                     AcceptsReturn="True" AcceptsTab="True" VerticalScrollBarVisibility="Auto"  KeyUp="txtTextBox_KeyUp" Loaded="txtTextBox_Loaded"
+                     SpellCheck.IsEnabled="True" Language="lv-lv" TextDecorations="Underline"
+                     TextAlignment="Center" BorderThickness="5" BorderBrush="#FF02113D">
+            <TextBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFF6F4F4" Offset="0.005"/>
+                    <GradientStop Color="#FFEE0707" Offset="0.998"/>
+                </LinearGradientBrush>
+            </TextBox.Background>
+
+        </TextBox>
+
+
+
     </DockPanel>
 </Window>
