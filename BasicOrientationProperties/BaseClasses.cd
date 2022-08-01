@@ -65,23 +65,23 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="System.Windows.Controls.Button" Collapsed="true">
-    <Position X="15.5" Y="6.75" Width="1.5" />
+    <Position X="15.5" Y="7" Width="1.5" />
     <TypeIdentifier />
   </Class>
   <Class Name="System.Windows.Controls.CheckBox" Collapsed="true">
-    <Position X="15.5" Y="7.75" Width="1.5" />
+    <Position X="19.25" Y="8" Width="1.5" />
     <TypeIdentifier />
   </Class>
   <Class Name="System.Windows.Controls.Primitives.ToggleButton" Collapsed="true">
-    <Position X="17.5" Y="6.75" Width="1.5" />
+    <Position X="17.5" Y="7" Width="1.5" />
     <TypeIdentifier />
   </Class>
   <Class Name="System.Windows.Controls.RadioButton" Collapsed="true">
-    <Position X="17.5" Y="7.75" Width="1.5" />
+    <Position X="17.5" Y="8" Width="1.5" />
     <TypeIdentifier />
   </Class>
   <Class Name="System.Windows.Controls.Primitives.RepeatButton" Collapsed="true">
-    <Position X="13.5" Y="6.75" Width="1.5" />
+    <Position X="13.5" Y="7" Width="1.5" />
     <TypeIdentifier />
   </Class>
   <Class Name="System.Windows.Controls.ToolTip" Collapsed="true">

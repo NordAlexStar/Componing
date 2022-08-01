@@ -53,12 +53,7 @@
                      AcceptsReturn="True" AcceptsTab="True" VerticalScrollBarVisibility="Auto"  KeyUp="txtTextBox_KeyUp" Loaded="txtTextBox_Loaded"
                      SpellCheck.IsEnabled="True" Language="lv-lv" TextDecorations="Underline"
                      TextAlignment="Center" BorderThickness="5" BorderBrush="#FF02113D">
-            <TextBox.Background>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="#FFF6F4F4" Offset="0.005"/>
-                    <GradientStop Color="#FFEE0707" Offset="0.998"/>
-                </LinearGradientBrush>
-            </TextBox.Background>
+            
 
         </TextBox>
 
