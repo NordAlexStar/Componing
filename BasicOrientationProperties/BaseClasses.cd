@@ -98,7 +98,7 @@
     <TypeIdentifier />
   </Class>
   <Class Name="System.Windows.Controls.HeaderedContentControl" Collapsed="true">
-    <Position X="21.25" Y="5.75" Width="1.5" />
+    <Position X="21.25" Y="5.75" Width="2.25" />
     <TypeIdentifier />
   </Class>
   <Class Name="System.Windows.Controls.Expander" Collapsed="true">

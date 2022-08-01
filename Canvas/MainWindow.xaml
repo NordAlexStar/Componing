@@ -5,15 +5,131 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Canvas"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Canvas Background="Lavender">
-        <ToggleButton Background="AliceBlue" Name="TheButton" Content="TB"  IsChecked="True" Checked="TheButton_Checked"
-                Canvas.Top="20" Canvas.Left="40" Height="116" Width="119" Unchecked="TheButton_Checked"/>
+        Title="MainWindow" Height="128" Width="430">
+    <Window.Resources>
 
-        <RepeatButton Background="LightSkyBlue" Content="Top 20 Right 20" Click="RepeatButton_Click" PreviewMouseLeftButtonUp="RepeatButton_MouseLeftButtonUp" Canvas.Left="294" Canvas.Top="43"/>
-        <Button Background="Aquamarine" Content="Bottom 30 Left 20" Canvas.Bottom="30" Canvas.Left="20"/>
-        <Button Background="LightCyan" Content="Bottom 20 Right 40" Canvas.Bottom="20" Canvas.Right="40"/>
-        <TextBlock x:Name="textBlock" Canvas.Left="199" TextWrapping="Wrap"  Text="TextBlock" Canvas.Top="47"/>
-        <TextBlock x:Name="textBlock1" Canvas.Left="393" TextWrapping="Wrap" Text="TextBlock" Canvas.Top="47"/>
+        <Style TargetType="{x:Type ToggleButton}" >
+            <Setter Property="Content" Value="{x:Null}"/>
+            <Style.Triggers>
+                <Trigger Property="IsChecked" Value="True">
+                    <Setter Property="Content">
+                        <Setter.Value>
+                            <Border Background="Red" Height="10"/>
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+    </Window.Resources>
+
+    <Canvas Background="Lavender">
+        <Expander ExpandDirection="Right" IsExpanded="True">
+            <Expander.Header>
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="/1h.png" Height="10"></Image>
+                    <TextBlock Text="Blah Blah" Margin="10,0,0,0"></TextBlock>
+                </StackPanel>
+            </Expander.Header>
+            <StackPanel>
+                <RadioButton Content="1"></RadioButton>
+                <RadioButton Content="2"></RadioButton>
+                <RadioButton Content="3"></RadioButton>
+            </StackPanel>
+        </Expander>
+        <CheckBox Background="AliceBlue" Name="TheButton" 
+                      HorizontalContentAlignment="Stretch" 
+                      VerticalContentAlignment="Bottom"
+                Canvas.Top="76" Canvas.Left="40" Height="26" Width="130" HorizontalAlignment="Left" VerticalAlignment="Center">
+            Das ist fantastisch
+            <!--<ToggleButton.Style>
+                <Style TargetType="{x:Type ToggleButton}" >
+                    <Setter Property="Content" Value="{x:Null}"/>
+                    <Style.Triggers>
+                        <Trigger Property="IsChecked" Value="True">
+                            <Setter Property="Content">
+                                <Setter.Value>
+                                    <Border Background="Red" Height="10"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </ToggleButton.Style>-->
+
+        </CheckBox>
+
+        <RepeatButton Background="LightSkyBlue" Click="RepeatButton_Click" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Bottom"
+                      PreviewMouseLeftButtonUp="RepeatButton_MouseLeftButtonUp" Canvas.Left="240" Canvas.Top="20"  Height="40"  Width="40" HorizontalAlignment="Left" VerticalAlignment="Center">
+            <Border Background="Red" Height="10" Name="brd" Visibility="Collapsed"></Border>
+        </RepeatButton>
+
+        <ToggleButton Background="AliceBlue" x:Name="TheButton_Copy" 
+            HorizontalContentAlignment="Stretch" 
+            VerticalContentAlignment="Bottom"
+            Canvas.Top="20" Canvas.Left="85" Height="40" Width="40" HorizontalAlignment="Left" VerticalAlignment="Center">
+            <ToggleButton.Style>
+                <Style TargetType="{x:Type ToggleButton}" >
+                    <Setter Property="Content" Value="{x:Null}"/>
+                    <Style.Triggers>
+                        <Trigger Property="IsChecked" Value="True">
+                            <Setter Property="Content">
+                                <Setter.Value>
+                                    <Border Background="Red" Height="10"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </ToggleButton.Style>
+
+
+        </ToggleButton>
+        <ToggleButton Background="AliceBlue" x:Name="TheButton_Copy1" 
+            HorizontalContentAlignment="Stretch" 
+            VerticalContentAlignment="Bottom"
+            Canvas.Top="20" Canvas.Left="130" Height="40" Width="40" HorizontalAlignment="Left" VerticalAlignment="Center">
+            <ToggleButton.Style>
+                <Style TargetType="{x:Type ToggleButton}" >
+                    <Setter Property="Content" Value="{x:Null}"/>
+                    <Style.Triggers>
+                        <Trigger Property="IsChecked" Value="True">
+                            <Setter Property="Content">
+                                <Setter.Value>
+                                    <Border Background="Red" Height="10"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </ToggleButton.Style>
+        </ToggleButton>
+
+        <ToggleButton Background="AliceBlue" x:Name="TheButton_Copy2"
+            HorizontalContentAlignment="Stretch" 
+            VerticalContentAlignment="Bottom"
+            Canvas.Top="20" Canvas.Left="175" Height="40" Width="40" HorizontalAlignment="Left" VerticalAlignment="Center">
+            
+            <ToggleButton.ToolTip>
+                
+                <StackPanel>
+                    <TextBlock Text="Супер кнопка"></TextBlock>
+                    <Button>Button</Button>
+                </StackPanel>
+                
+            </ToggleButton.ToolTip>
+            
+        </ToggleButton>
+
+        <RepeatButton Background="LightSkyBlue" Click="RepeatButton_Click" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Bottom"
+            PreviewMouseLeftButtonUp="RepeatButton_MouseLeftButtonUp" Canvas.Left="285" Canvas.Top="20"  Height="40"  Width="40" HorizontalAlignment="Left" VerticalAlignment="Center">
+            <Border Background="Red" Height="10" x:Name="brd1" Visibility="Collapsed"/>
+        </RepeatButton>
+
+        <RepeatButton Background="LightSkyBlue" Click="RepeatButton_Click" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Bottom"
+            PreviewMouseLeftButtonUp="RepeatButton_MouseLeftButtonUp" Canvas.Left="330" Canvas.Top="20"  Height="40"  Width="40" HorizontalAlignment="Left" VerticalAlignment="Center">
+            <Border Background="Red" Height="10" x:Name="brd2" Visibility="Collapsed"/>
+        </RepeatButton>
+
     </Canvas>
 </Window>
