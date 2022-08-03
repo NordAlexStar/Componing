@@ -5,26 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Canvas"
         mc:Ignorable="d"
-        Title="MainWindow" Height="128" Width="430">
+        Title="MainWindow" Height="282" Width="433">
+
     <Window.Resources>
 
-        <Style TargetType="{x:Type ToggleButton}" >
-            <Setter Property="Content" Value="{x:Null}"/>
-            <Style.Triggers>
-                <Trigger Property="IsChecked" Value="True">
-                    <Setter Property="Content">
-                        <Setter.Value>
-                            <Border Background="Red" Height="10"/>
-                        </Setter.Value>
-                    </Setter>
-                </Trigger>
-            </Style.Triggers>
-        </Style>
+
 
     </Window.Resources>
 
-    <Canvas Background="Lavender">
-        <Expander ExpandDirection="Right" IsExpanded="True">
+    <Canvas Background="{StaticResource MyBrush}" Margin="0,0,10,-6" Name="theCanvas">
+
+        <Expander ExpandDirection="Right" IsExpanded="True" Background="{StaticResource MyBrush}">
             <Expander.Header>
                 <StackPanel Orientation="Horizontal">
                     <Image Source="/1h.png" Height="10"></Image>
@@ -58,78 +49,58 @@
             </ToggleButton.Style>-->
 
         </CheckBox>
-
         <RepeatButton Background="LightSkyBlue" Click="RepeatButton_Click" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Bottom"
                       PreviewMouseLeftButtonUp="RepeatButton_MouseLeftButtonUp" Canvas.Left="240" Canvas.Top="20"  Height="40"  Width="40" HorizontalAlignment="Left" VerticalAlignment="Center">
             <Border Background="Red" Height="10" Name="brd" Visibility="Collapsed"></Border>
         </RepeatButton>
-
         <ToggleButton Background="AliceBlue" x:Name="TheButton_Copy" 
             HorizontalContentAlignment="Stretch" 
-            VerticalContentAlignment="Bottom"
+            VerticalContentAlignment="Bottom" Click="TheButton_Copy_Click"
             Canvas.Top="20" Canvas.Left="85" Height="40" Width="40" HorizontalAlignment="Left" VerticalAlignment="Center">
-            <ToggleButton.Style>
-                <Style TargetType="{x:Type ToggleButton}" >
-                    <Setter Property="Content" Value="{x:Null}"/>
-                    <Style.Triggers>
-                        <Trigger Property="IsChecked" Value="True">
-                            <Setter Property="Content">
-                                <Setter.Value>
-                                    <Border Background="Red" Height="10"/>
-                                </Setter.Value>
-                            </Setter>
-                        </Trigger>
-                    </Style.Triggers>
-                </Style>
-            </ToggleButton.Style>
-
-
         </ToggleButton>
-        <ToggleButton Background="AliceBlue" x:Name="TheButton_Copy1" 
+        <ToggleButton Background="AliceBlue" x:Name="TheButton_Copy1" Click="TheButton_Copy1_Click"
             HorizontalContentAlignment="Stretch" 
             VerticalContentAlignment="Bottom"
             Canvas.Top="20" Canvas.Left="130" Height="40" Width="40" HorizontalAlignment="Left" VerticalAlignment="Center">
-            <ToggleButton.Style>
-                <Style TargetType="{x:Type ToggleButton}" >
-                    <Setter Property="Content" Value="{x:Null}"/>
-                    <Style.Triggers>
-                        <Trigger Property="IsChecked" Value="True">
-                            <Setter Property="Content">
-                                <Setter.Value>
-                                    <Border Background="Red" Height="10"/>
-                                </Setter.Value>
-                            </Setter>
-                        </Trigger>
-                    </Style.Triggers>
-                </Style>
-            </ToggleButton.Style>
-        </ToggleButton>
 
+        </ToggleButton>
         <ToggleButton Background="AliceBlue" x:Name="TheButton_Copy2"
             HorizontalContentAlignment="Stretch" 
             VerticalContentAlignment="Bottom"
             Canvas.Top="20" Canvas.Left="175" Height="40" Width="40" HorizontalAlignment="Left" VerticalAlignment="Center">
-            
+
             <ToggleButton.ToolTip>
-                
+
                 <StackPanel>
                     <TextBlock Text="Супер кнопка"></TextBlock>
                     <Button>Button</Button>
                 </StackPanel>
-                
-            </ToggleButton.ToolTip>
-            
-        </ToggleButton>
 
+            </ToggleButton.ToolTip>
+
+        </ToggleButton>
         <RepeatButton Background="LightSkyBlue" Click="RepeatButton_Click" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Bottom"
             PreviewMouseLeftButtonUp="RepeatButton_MouseLeftButtonUp" Canvas.Left="285" Canvas.Top="20"  Height="40"  Width="40" HorizontalAlignment="Left" VerticalAlignment="Center">
             <Border Background="Red" Height="10" x:Name="brd1" Visibility="Collapsed"/>
         </RepeatButton>
-
         <RepeatButton Background="LightSkyBlue" Click="RepeatButton_Click" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Bottom"
             PreviewMouseLeftButtonUp="RepeatButton_MouseLeftButtonUp" Canvas.Left="330" Canvas.Top="20"  Height="40"  Width="40" HorizontalAlignment="Left" VerticalAlignment="Center">
             <Border Background="Red" Height="10" x:Name="brd2" Visibility="Collapsed"/>
         </RepeatButton>
+        <Slider x:Name="slider" 
+               Orientation="Vertical" Minimum ="0" Maximum="10000" Value="100" Canvas.Left="102" Canvas.Top="121" Width="23" HorizontalAlignment="Center" Height="100
+                " VerticalAlignment="Top"/>
+        <ProgressBar Height="80" Canvas.Left="10" Canvas.Top="144" Name="pb"
+                     Width="10" Minimum="0" Maximum="{Binding ElementName=slider, Path=Value}"  Orientation="Vertical" 
+                     HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+        <TextBox x:Name="textBlock" Canvas.Left="130" TextWrapping="Wrap" 
+                   Text="{Binding ElementName=slider, Path=Value}" Canvas.Top="127" />
+
+        <Border BorderBrush="Black" 
+                BorderThickness="1" Height="70" Canvas.Left="240" Canvas.Top="139" Width="97">
+
+        </Border>
 
     </Canvas>
 </Window>
