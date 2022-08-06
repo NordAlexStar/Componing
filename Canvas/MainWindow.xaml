@@ -13,7 +13,7 @@
 
     </Window.Resources>
 
-    <Canvas Background="{StaticResource MyBrush}" Margin="0,0,10,-6" Name="theCanvas">
+    <Canvas Margin="0,0,10,-6" Name="theCanvas">
 
         <Expander ExpandDirection="Right" IsExpanded="True" Background="{StaticResource MyBrush}">
             <Expander.Header>
