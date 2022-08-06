@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\OneDrive - Mācību centrs plus\C#\MyFirstWpfApp\MyFirstWpfApp\MyFirstWpfApp.csproj" />
+    <ProjectReference Include="..\MyFirstWpfApp\MyFirstWpfApp.csproj" />
   </ItemGroup>
 
 </Project>
