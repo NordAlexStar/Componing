@@ -20,7 +20,7 @@
 
         <TextBox Grid.Row="0" Name="tb1"  >
             <TextBox.Text>
-                <PriorityBinding FallbackValue="Loading ..." TargetNullValue="Loading ...">
+                <PriorityBinding FallbackValue="Binding error ..." TargetNullValue="Loading ...">
                     <Binding Path="FirstPeople" IsAsync="True" Converter="{StaticResource PeopleConverter}"/>
                     <Binding Path="SecondPeople" IsAsync="True" Converter="{StaticResource PeopleConverter}"/>
                     <Binding Path="Default" IsAsync="True" Converter="{StaticResource PeopleConverter}" Mode="OneTime"/>
