@@ -14,7 +14,7 @@ namespace MyFirstWpfApp
         {
             People? people = (People?)value;
             if (people == null) return null;
-            return (people.Name ?? "") + parameter.ToString() + " " + (people.Family ?? "");
+            return (people.Name ?? "") + " " + (people.Family ?? "");
         }
 
         public object Convert(object[] values, Type targetType, object parameter, CultureInfo culture)

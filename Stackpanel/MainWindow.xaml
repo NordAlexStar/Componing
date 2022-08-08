@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Stackpanel"
         xmlns:data="clr-namespace:MyFirstWpfApp;assembly=MyFirstWpfApp"
         mc:Ignorable="d"
-        Title="MainWindow" d:DesignHeight="188.64"  Loaded="Window_Loaded" Width="180"  >
+        Title="MainWindow"   Loaded="Window_Loaded" d:DesignHeight="169.053" d:DesignWidth="236.92" WindowStartupLocation="CenterScreen" >
     <Window.Resources>
         <data:PeopleToStringConverter x:Key="PeopleConverter"></data:PeopleToStringConverter>
     </Window.Resources>
@@ -20,14 +20,15 @@
 
         <TextBox Grid.Row="0" Name="tb1"  >
             <TextBox.Text>
-                <MultiBinding Converter="{StaticResource PeopleConverter}">
-                    <Binding Path="SecondPeople.Name"></Binding>
-                    <Binding Path="SecondPeople.Family"></Binding>
-                </MultiBinding>
+                <PriorityBinding FallbackValue="Loading ..." TargetNullValue="Loading ...">
+                    <Binding Path="FirstPeople" IsAsync="True" Converter="{StaticResource PeopleConverter}"/>
+                    <Binding Path="SecondPeople" IsAsync="True" Converter="{StaticResource PeopleConverter}"/>
+                    <Binding Path="Default" IsAsync="True" Converter="{StaticResource PeopleConverter}" Mode="OneTime"/>
+                </PriorityBinding>
             </TextBox.Text>
         </TextBox>
 
-        <TextBox Grid.Row="1" Name="tb2" Text="{Binding StringFormat=Фамилия: {0}, Path=FirstPeople.Family}"></TextBox>
+        <TextBox Grid.Row="1" Name="tb2" ></TextBox>
 
         <Grid  Grid.Row="2">
             <Grid.ColumnDefinitions>

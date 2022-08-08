@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 using MyFirstWpfApp;
@@ -17,6 +18,7 @@ namespace Stackpanel
         {
             get
             {
+                Thread.Sleep(5000);
                 return people;
             }
             set
@@ -30,6 +32,7 @@ namespace Stackpanel
         {
             get
             {
+                Thread.Sleep(2500);
                 return people2;
             }
             set
@@ -37,6 +40,16 @@ namespace Stackpanel
                 people2 = value;
                 OnPropertyChanged();
             }
+        }
+
+        public People? Default
+        {
+            get
+            {
+                Thread.Sleep(1000);
+                return new People() { Name = "Olegs", Family = "Minienkovs" };
+            }
+           
         }
 
         #region MyRegion
