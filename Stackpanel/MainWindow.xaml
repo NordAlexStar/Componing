@@ -8,7 +8,6 @@
         mc:Ignorable="d"
         Title="MainWindow" d:DesignHeight="188.64"  Loaded="Window_Loaded" Width="180"  >
     <Window.Resources>
-        <data:People Family="Pupkin" Name="Vasja" x:Key="Vasja"></data:People>
         <data:PeopleToStringConverter x:Key="PeopleConverter"></data:PeopleToStringConverter>
     </Window.Resources>
 
@@ -19,16 +18,16 @@
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
 
-        <TextBox Grid.Row="0" Name="tb1">
+        <TextBox Grid.Row="0" Name="tb1"  >
             <TextBox.Text>
                 <MultiBinding Converter="{StaticResource PeopleConverter}">
-                    <Binding Source="{StaticResource Vasja}" Path="Name"></Binding>
-                    <Binding Source="{StaticResource Vasja}" Path="Family"></Binding>
+                    <Binding Path="SecondPeople.Name"></Binding>
+                    <Binding Path="SecondPeople.Family"></Binding>
                 </MultiBinding>
-            </TextBox.Text>   
+            </TextBox.Text>
         </TextBox>
-        
-        <TextBox Grid.Row="1" Name="tb2" Text="{Binding StringFormat=Фамилия: {0}, Source={StaticResource Vasja}, Path=Family}"></TextBox>
+
+        <TextBox Grid.Row="1" Name="tb2" Text="{Binding StringFormat=Фамилия: {0}, Path=FirstPeople.Family}"></TextBox>
 
         <Grid  Grid.Row="2">
             <Grid.ColumnDefinitions>
